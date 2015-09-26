@@ -116,8 +116,8 @@ namespace ItemCount
         {
             eventHandler = new StashEvents();
 			//run itemcount function
-            Logger.Log("Game is joined, Start ItemCount");
-            ItemCountTabUI.ShowItemCount();		
+            //Logger.Log("Game is joined, Start ItemCount");
+            //ItemCountTabUI.ShowItemCount();		
 		}		
 
         public void OnInitialize()
