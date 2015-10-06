@@ -53,7 +53,7 @@ namespace ItemCount
 
         static readonly string NAME = "ItemCount";
         static readonly string AUTHOR = "Taozi";
-        static readonly Version VERSION = new Version(2, 3, 1);
+        static readonly Version VERSION = new Version(2, 3, 2);
         static readonly string DESCRIPTION = "Count Items in Stash and Inventory";
 		
 		private static StashEvents eventHandler;
@@ -116,8 +116,8 @@ namespace ItemCount
         {
             eventHandler = new StashEvents();
 			//run itemcount function
-            //Logger.Log("Game is joined, Start ItemCount");
-            //ItemCountTabUI.ShowItemCount();		
+            Logger.Log("Game is joined, Start ItemCount");
+            ItemCountTabUI.ShowItemCount();		
 		}		
 
         public void OnInitialize()
