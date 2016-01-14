@@ -53,7 +53,7 @@ namespace ItemCount
 
         static readonly string NAME = "ItemCount";
         static readonly string AUTHOR = "Taozi";
-        static readonly Version VERSION = new Version(2, 3, 2);
+        static readonly Version VERSION = new Version(2, 4, 0);
         static readonly string DESCRIPTION = "Count Items in Stash and Inventory";
 		
 		private static StashEvents eventHandler;
@@ -265,30 +265,30 @@ namespace ItemCount
 
             foreach (ACDItem item in ZetaDia.Me.Inventory.StashItems)
             {
-                if (IsMyItemSno(item.ActorSNO))
+                if (IsMyItemSno(item.ActorSnoId))
                 {
 					if (item.ItemStackQuantity == 0) //for non-stackable item, item.ItemStackQuantity is 0
 					{
-						AddToMyItemCount(item.ActorSNO, 1);
+						AddToMyItemCount(item.ActorSnoId, 1);
 					}
                     if (item.ItemStackQuantity != 0)
 					{
-						AddToMyItemCount(item.ActorSNO, item.ItemStackQuantity);
+						AddToMyItemCount(item.ActorSnoId, item.ItemStackQuantity);
 					}
                 }
             }
 
             foreach (ACDItem item in ZetaDia.Me.Inventory.Backpack)
             {
-                if (IsMyItemSno(item.ActorSNO))
+                if (IsMyItemSno(item.ActorSnoId))
                 {
 					if (item.ItemStackQuantity == 0) //for non-stackable item, item.ItemStackQuantity is 0
 					{
-						AddToMyItemCount(item.ActorSNO, 1);
+						AddToMyItemCount(item.ActorSnoId, 1);
 					}
                     if (item.ItemStackQuantity != 0)
 					{
-						AddToMyItemCount(item.ActorSNO, item.ItemStackQuantity);
+						AddToMyItemCount(item.ActorSnoId, item.ItemStackQuantity);
 					}
                 }
             }
@@ -298,14 +298,14 @@ namespace ItemCount
         {
             foreach (ACDItem item in ZetaDia.Me.Inventory.StashItems)
             {
-				Logger.Log(string.Format("{0},{1},{2}", item.Name, item.ActorSNO, item.ItemStackQuantity));
-//				ItemCountTabUI.Log(string.Format("{0},{1},{2}", item.Name, item.ActorSNO, item.ItemStackQuantity));
+				Logger.Log(string.Format("{0},{1},{2}", item.Name, item.ActorSnoId, item.ItemStackQuantity));
+//				ItemCountTabUI.Log(string.Format("{0},{1},{2}", item.Name, item.ActorSnoId, item.ItemStackQuantity));
             }
 
             foreach (ACDItem item in ZetaDia.Me.Inventory.Backpack)
             {
-				Logger.Log(string.Format("{0},{1},{2}", item.Name, item.ActorSNO, item.ItemStackQuantity));
-//				ItemCountTabUI.Log(string.Format("{0},{1},{2}", item.Name, item.ActorSNO, item.ItemStackQuantity));
+				Logger.Log(string.Format("{0},{1},{2}", item.Name, item.ActorSnoId, item.ItemStackQuantity));
+//				ItemCountTabUI.Log(string.Format("{0},{1},{2}", item.Name, item.ActorSnoId, item.ItemStackQuantity));
             }
         }		
 
