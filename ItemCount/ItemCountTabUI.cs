@@ -596,7 +596,7 @@ namespace ItemCount
 										Source = new BitmapImage(new Uri(@Path.Combine(imagesPath, "12.png"))),
 										VerticalAlignment = VerticalAlignment.Center
 									},
-								ToolTip = 	"Infernal Machine of Bones"						
+								ToolTip = 	"Infernal Machine of Regret"						
 							};
 						Grid.SetColumnSpan(btnImage12, 1);
 						Grid.SetRowSpan(btnImage12,1);
@@ -631,7 +631,7 @@ namespace ItemCount
 										Source = new BitmapImage(new Uri(@Path.Combine(imagesPath, "13.png"))),
 										VerticalAlignment = VerticalAlignment.Center
 									},
-								ToolTip = 	"Infernal Machine of Gluttony"						
+								ToolTip = 	"Infernal Machine of Putridness"						
 							};
 						Grid.SetColumnSpan(btnImage13, 1);
 						Grid.SetRowSpan(btnImage13,1);
@@ -666,7 +666,7 @@ namespace ItemCount
 										Source = new BitmapImage(new Uri(@Path.Combine(imagesPath, "14.png"))),
 										VerticalAlignment = VerticalAlignment.Center
 									},
-								ToolTip = 	"Infernal Machine of War"						
+								ToolTip = 	"Infernal Machine of Terror"						
 							};
 						Grid.SetColumnSpan(btnImage14, 1);
 						Grid.SetRowSpan(btnImage14,1);
@@ -701,7 +701,7 @@ namespace ItemCount
 										Source = new BitmapImage(new Uri(@Path.Combine(imagesPath, "15.png"))),
 										VerticalAlignment = VerticalAlignment.Center
 									},
-								ToolTip = 	"Infernal Machine of Evil"						
+								ToolTip = 	"Infernal Machine of Fright"						
 							};
 						Grid.SetColumnSpan(btnImage15, 1);
 						Grid.SetRowSpan(btnImage15,1);
@@ -876,7 +876,7 @@ namespace ItemCount
                                 Source = new BitmapImage(new Uri(@Path.Combine(imagesPath, "20.png"))),
                                 VerticalAlignment = VerticalAlignment.Center
                             },
-                            ToolTip = "Heart of Evil"
+                            ToolTip = "Heart of Fright"
                         };
                         Grid.SetColumnSpan(btnImage20, 1);
                         Grid.SetRowSpan(btnImage20, 1);

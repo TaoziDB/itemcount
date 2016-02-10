@@ -53,7 +53,7 @@ namespace ItemCount
 
         static readonly string NAME = "ItemCount";
         static readonly string AUTHOR = "Taozi";
-        static readonly Version VERSION = new Version(2, 4, 0);
+        static readonly Version VERSION = new Version(2, 4, 1);
         static readonly string DESCRIPTION = "Count Items in Stash and Inventory";
 		
 		private static StashEvents eventHandler;
@@ -231,15 +231,15 @@ namespace ItemCount
 														"Arreat War Tapestry",
 														"Corrupted Angel Flesh",
 														"Westmarch Holy Water",
-														"Infernal Machine of Bones",
-														"Infernal Machine of Gluttony",
-														"Infernal Machine of War",
-														"Infernal Machine of Evil",
+														"Infernal Machine of Regret",
+														"Infernal Machine of Putridness",
+														"Infernal Machine of Terror",
+														"Infernal Machine of Fright",
 														"Ramaladni's Gift",
                                                         "Leoric's Regret",
                                                         "Vial of Putridness",
                                                         "Idol of Terror",
-                                                        "Heart of Evil"
+                                                        "Heart of Fright"
 														};
 
 

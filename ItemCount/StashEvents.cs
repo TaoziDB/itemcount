@@ -22,11 +22,13 @@ namespace ItemCount
     {
         private bool _stashOpen = false;
         private bool _countDone = false;
+		private bool _stashClose = false;
         
         
         public StashEvents()
         {
             _stashOpen = false;
+			_stashClose = false;
             _countDone = false;
         }
 
@@ -35,17 +37,16 @@ namespace ItemCount
             if (!_stashOpen && UIElements.StashWindow.IsVisible)
             {
 				_stashOpen = true;
-				//Logger.Log("Stash Open check works");
+			}
+            if (!UIElements.StashWindow.IsVisible && _stashOpen)
+            {
 				if (!_countDone)
 				{
 					//run itemcount function
-                    Logger.Log("Stash is open, Start ItemCount");
+                    Logger.Log("Stash is closed, Start ItemCount");
                     ItemCountTabUI.ShowItemCount();
 					_countDone = true;
-				}
-			}
-            if (!UIElements.StashWindow.IsVisible)
-            {
+				}				
                 _stashOpen = false;
                 _countDone = false;
             }
